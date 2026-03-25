@@ -11,9 +11,6 @@
 
 <style>
 
-/* =========================
-   GLOBAL
-========================= */
 * {
     margin: 0;
     padding: 0;
@@ -36,14 +33,13 @@ section {
     padding: 80px 0;
 }
 
-/* =========================
-   NAVBAR
-========================= */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    background-color: rgba(27, 27, 27, 0.801);
+    color: white;
 }
 
 .logo-container {
@@ -64,23 +60,23 @@ nav {
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #222;
+    padding: 25px 0;
+    color: #ffffff;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #007BFF;
+    color: #ff9d00;
 }
 
-/* =========================
-   HERO
-========================= */
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     align-items: center;
     padding: 100px 0;
+    background-color: rgba(27, 27, 27, 0.801);
+    color: white;
 }
 
 .hero h1 {
@@ -89,11 +85,10 @@ nav a:hover {
 }
 
 .hero p {
-    color: #666;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
-/* Buttons */
 .btn {
     padding: 12px 22px;
     border-radius: 30px;
@@ -109,11 +104,10 @@ nav a:hover {
 }
 
 .btn.secondary {
-    border: 2px solid #111;
-    color: #111;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
-/* Stats */
 .stats {
     display: flex;
     gap: 40px;
@@ -124,17 +118,13 @@ nav a:hover {
     font-size: 1.8rem;
 }
 
-/* Hero image */
 .hero img {
     width: 100%;
     border-radius: 12px;
 }
 
-/* =========================
-   SERVICES
-========================= */
 .services {
-    background: #f9fafb;
+    background: #f7f8f8;
 }
 
 .section-title {
@@ -146,7 +136,6 @@ nav a:hover {
     color: #666;
 }
 
-/* Grid */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -154,7 +143,6 @@ nav a:hover {
     margin-top: 40px;
 }
 
-/* Cards */
 .card {
     background: white;
     padding: 25px;
@@ -162,16 +150,13 @@ nav a:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
-/* =========================
-   PRICING
-========================= */
 .pricing ul {
     margin-top: 10px;
     padding-left: 20px;
 }
 
 .price-card {
-    background: white;
+    background: #f7f8f8;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
@@ -189,20 +174,14 @@ nav a:hover {
 
 }
 
-/* =========================
-   TESTIMONIALS
-========================= */
 .testimonials {
-    background: #f9fafb;
+    background: #f7f8f8;
 }
 
 .testimonials .card {
     font-style: italic;
 }
 
-/* =========================
-   CONTACT
-========================= */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -225,9 +204,6 @@ form button {
     border-radius: 6px;
 }
 
-/* =========================
-   FOOTER
-========================= */
 footer {
     background: #111;
     color: white;
@@ -245,9 +221,6 @@ footer a {
     margin: 5px 0;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
@@ -267,47 +240,44 @@ footer a {
 
 <body>
 
-<!-- NAVBAR -->
 <div class="container">
-<nav>
-    <div class="logo-container">
-        <img src="logo.png" alt="Logo">
-        <span>Bolt Computing</span>
+    <nav>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <span>Bolt Computing</span>
+        </div>
+
+        <div>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contacts</a>
+        </div>
+    </nav>
+</div>
+
+<section class="container hero">
+    <div>
+        <h1>Expert Computer Repair Services</h1>
+        <p>
+            Fast, reliable, and affordable repairs for all your computer needs.
+            Same-day service available. We fix PCs, Macs, laptops and more.
+        </p>
+
+        <a href="#" class="btn primary">Book Now</a>
+        <a href="#" class="btn secondary">Call Now</a>
+
+        <div class="stats">
+            <div><strong>500+</strong><br>Repairs done</div>
+            <div><strong>4.9</strong><br>Customer Rating</div>
+            <div><strong>24h</strong><br>Turnaround</div>
+        </div>
     </div>
 
     <div>
-        <a href="#">Services</a>
-        <a href="#">Pricing</a>
-        <a href="#">Contacts</a>
+        <img src="picture.jpg" alt="Repair service">
     </div>
-</nav>
-</div>
-
-<!-- HERO -->
-<section class="container hero">
-<div>
-    <h1>Expert Computer Repair Services</h1>
-    <p>
-        Fast, reliable, and affordable repairs for all your computer needs.
-        Same-day service available. We fix PCs, Macs, laptops and more.
-    </p>
-
-    <a href="#" class="btn primary">Book Now</a>
-    <a href="#" class="btn secondary">Call Now</a>
-
-    <div class="stats">
-        <div><strong>500+</strong><br>Repairs done</div>
-        <div><strong>4.9</strong><br>Customer Rating</div>
-        <div><strong>24h</strong><br>Turnaround</div>
-    </div>
-</div>
-
-<div>
-    <img src="picture.jpg" alt="Repair service">
-</div>
 </section>
 
-<!-- SERVICES -->
 <section class="services">
 <div class="container">
     <h2 class="section-title">Our Services</h2>
@@ -324,106 +294,124 @@ footer a {
 </div>
 </section>
 
-<!-- PRICING -->
 <section class="pricing container">
-<h2 class="section-title">Pricing</h2>
+    <h2 class="section-title">Pricing</h2>
+    <p class="section-sub">No hidden fees. Pay only what you need</p>
 
-<div class="grid">
-    <div class="price-card">
-        <h3>Diagnostic</h3>
-        <p class="price">CHF 29</p>
-        <p>Identify the problem</p>
-    </div>
 
-    <div class="price-card">
-        <h3>Standard Repair</h3>
-        <p class="price">CHF 99</p>
-        <ul>
-            <li>Software troubleshooting</li>
-            <li>Virus removal</li>
-            <li>System optimization</li>
-            <li>Data backup assistance</li>
-        </ul>
-    </div>
+    <div class="grid">
+        <div class="price-card">
+            <h3>Diagnostic</h3>
+            <p class="price">CHF 29</p>
+            <p>Identify the problem</p>
+            <ul>
+                <li>Complete system diagnostic</li>
+                <li>Problem identification</li>
+                <li>Repair estimate</li>
+                <li>Not charged if you accept a repair proposal</li>
+            </ul>
+        </div>
 
-    <div class="price-card">
-        <h3>Hardware Repair</h3>
-        <p class="price">CHF 149+</p>
-        <ul>
-            <li>Component replacement</li>
-            <li>Screen repair</li>
-            <li>Battery replacement</li>
-            <li>Hardware upgrades</li>
-        </ul>
+        <div class="price-card">
+            <h3>Standard Repair</h3>
+            <p class="price">CHF 99</p>
+            <p>Most common fixes</p>
+            <ul>
+                <li>Software troubleshooting</li>
+                <li>Virus removal</li>
+                <li>System optimization</li>
+                <li>Data backup assistance</li>
+            </ul>
+        </div>
+
+        <div class="price-card">
+            <h3>Hardware Repair</h3>
+            <p class="price">CHF 149+</p>
+            <p>Physical components fixes</p>
+            <ul>
+                <li>Component replacement</li>
+                <li>Screen repair</li>
+                <li>Battery replacement</li>
+                <li>Hardware upgrades</li>
+                <li>30-day warranty</li>
+            </ul>
+        </div>
     </div>
-</div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section class="testimonials">
-<div class="container">
-<h2 class="section-title">What our Customers Say</h2>
+    <div class="container">
+        <h2 class="section-title">What our Customers Say</h2>
+        <p class="section-sub">Don't just take our word for it</p>
 
-<div class="grid">
-    <div class="card">
-        <span class="stars">★★★★★</span>
-        <p>"Laptop died. They revived it. Absolute heroes"</p>
-        <strong>Peter Parker</strong></div>
-    <div class="card">
-        <span class="stars">★★★★★</span>
-        <p>"Fast, efficient, no drama."</p>
-        <strong>Tony Stark</strong></div>
-    <div class="card">
-        <span class="stars">★★★★★</span>
-        <p>"Discretion, precision, results."</p>
-        <strong>Bruce Wayne</strong></div>
-</div>
-</div>
+        <div class="grid">
+            <div class="card">
+                <span class="stars">★★★★★</span>
+                <p>"Laptop died. They revived it. Absolute heroes"</p>
+                <strong>Peter Parker</strong>
+            </div>
+            <div class="card">
+                <span class="stars">★★★★★</span>
+                <p>"Fast, efficient, no drama."</p>
+                <strong>Tony Stark</strong>
+            </div>
+            <div class="card">
+                <span class="stars">★★★★★</span>
+                <p>"Discretion, precision, results."</p>
+                <strong>Bruce Wayne</strong>
+            </div>
+        </div>
+    </div>
 </section>
 
-<!-- CONTACT -->
 <section class="container">
-<h2 class="section-title">Get in Touch</h2>
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="section-sub">Visit us or reach out for a free consultation</p>
 
-<div class="contact-grid">
-<div>
-<p><strong>Location:</strong> Via Zurigo 1, Lugano</p>
-<p><strong>Phone:</strong> +41 90 123 45 67</p>
-<p><strong>Email:</strong> support@boltcomputing.com</p>
-</div>
+    <div class="contact-grid">
+        <div>
+            <p><strong>Location:</strong> Via Zurigo 1, Lugano</p>
+            <p><strong>Phone:</strong> +41 90 123 45 67</p>
+            <p><strong>Email:</strong> support@boltcomputing.com</p>
+        </div>
 
-<form>
-<input placeholder="Your Name">
-<input placeholder="Email Address">
-<input placeholder="Phone Number">
-<textarea placeholder="Describe your issue"></textarea>
-<button>Submit Request</button>
-</form>
-</div>
+        <form>
+            <input placeholder="Your Name">
+            <input placeholder="Email Address">
+            <input placeholder="Phone Number">
+            <textarea placeholder="Describe your issue"></textarea>
+            <button>Submit Request</button>
+        </form>
+    </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
-<div class="container grid">
-<div>
-<h3>Bolt Computing</h3>
-<p>Your trusted partner for all computer repair needs.</p>
-</div>
+    <div class="container grid">
+        <div>
+            <h3>Bolt Computing</h3>
+            <p>Your trusted partner for all computer repair needs. Fast, reliable and affordable</p>
+        </div>
 
-<div>
-<h4>Quick Links</h4>
-<a href="#">Services</a>
-<a href="#">Pricing</a>
-<a href="#">Book Now</a>
-</div>
+        <div>
+            <h4>Quick Links</h4>
+            <a href="#">Services</a>
+            <a href="#">Pricing</a>
+            <a href="#">Book Now</a>
+        </div>
 
-<div>
-<h4>Company</h4>
-<a href="#">About Us</a>
-<a href="#">Careers</a>
-<a href="#">Contacts</a>
-</div>
-</div>
+        <div>
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Contacts</a>
+        </div>
+                <div>
+            <h4>Follow us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
 </footer>
 
 </body>
